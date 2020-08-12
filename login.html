@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <title>Monware Clinical</title>
+
+    <link rel="stylesheet" href="Monstersoft/style.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Monware CLinical</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="Monstersoft/images/monware.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="Monstersoft/images/monwareapletouch.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Monstersoft/css/bootstrap.min.css">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="Monstersoft/css/pogo-slider.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="Monstersoft/css/style.css">
+    <link rel="stylesheet" href="Monstersoft/css/style1.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="Monstersoft/css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Monstersoft/css/custom.css">
+    <link rel="stylesheet" href="Monstersoft/css/banner.css">
+    <link rel="stylesheet" href="Monstersoft/css/keyframes.css">
+    <link rel="stylesheet" href="Monstersoft/css/style1.css">
+</head>
+<header class="top-header">
+    <nav class="navbar header-nav navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="Monstersoft/images/Logomonware.png" alt="image"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
+                aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                <ul class="navbar-nav">
+                    <li><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li><a class="nav-link" href="login.html">Iniciar
+                            sesion</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+    <div id="login_div" class="main-div">
+        <h3>Monware Clinical</h3>
+        <input type="email" placeholder="Email..." id="email_field" />
+        <input type="password" placeholder="Password..." id="password_field" />
+
+        <button onclick="login()">Login to Account</button>
+    </div>
+
+    <div id="user_div" class="loggedin-div">
+        <h3>Bienvenido</h3>
+        <button onclick="location.href='medicamentos.html'">Medicamentos</button>
+        <button onclick="location.href='registrarse.html'">Completar datos</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCg2ZyAAZLniL5dEFF04lPBUxvZnEaWk4U",
+            authDomain: "monstersoft-8f986.firebaseapp.com",
+            databaseURL: "https://monstersoft-8f986.firebaseio.com",
+            projectId: "monstersoft-8f986",
+            storageBucket: "monstersoft-8f986.appspot.com",
+            messagingSenderId: "256002037413",
+            appId: "1:256002037413:web:005cd7bc9885decaca5f4c",
+            measurementId: "G-18HLYDQH3J"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
+    <script src="Monstersoft/login.js"></script>
+
+    <a href="#" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="Monstersoft/js/jquery.min.js"></script>
+    <script src="Monstersoft/js/popper.min.js"></script>
+    <script src="Monstersoft/js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="Monstersoft/js/jquery.magnific-popup.min.js"></script>
+    <script src="Monstersoft/js/jquery.pogo-slider.min.js"></script>
+    <script src="Monstersoft/js/slider-index.js"></script>
+    <script src="Monstersoft/js/smoothscroll.js"></script>
+    <script src="Monstersoft/js/TweenMax.min.js"></script>
+    <script src="Monstersoft/js/main.js"></script>
+    <script src="Monstersoft/js/owl.carousel.min.js"></script>
+    <script src="Monstersoft/js/form-validator.min.js"></script>
+    <script src="Monstersoft/js/contact-form-script.js"></script>
+    <script src="Monstersoft/js/isotope.min.js"></script>
+    <script src="Monstersoft/js/images-loded.min.js"></script>
+    <script src="Monstersoft/js/custom.js"></script>
+
+</body>
+
+</html>
